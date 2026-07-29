@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
-<title>지하로, 안전하게 — 학교 민방위 대피 판단훈련</title>
+<title>질서있게, 안전하게 — 학교 민방위 대피 판단훈련</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
 :root{
@@ -192,7 +192,7 @@ button{font-family:inherit;border:0;cursor:pointer;background:none;color:inherit
 <section class="screen on" id="scr-intro">
   <div class="wrap">
     <div class="intro-label">학교 모의 대피훈련 ③ 민방위</div>
-    <h1 class="intro-title">지하로,<br><em>안전하게</em><small>경계경보는 해제가 아니다</small></h1>
+    <h1 class="intro-title">질서있게,<br><em>안전하게</em><small>경계경보는 해제가 아니다</small></h1>
     <p class="intro-sub">수업 중, 갑자기 <b>공습경보 사이렌</b>이 울린다.<br>대피소까지 — <b>여섯 번의 판단</b>이 너를 기다린다.</p>
     <div class="howto">
       <div class="h-item"><i class="h-ico">안전</i><div><b>안전 게이지 100%로 시작</b><span>오답 −35% · 머뭇거림 −20% · 0%가 되면 쓰러진다</span></div></div>
@@ -289,34 +289,34 @@ const SCENES = [
     rule:"공습경보 시 창문·유리에서 즉시 떨어진다",
     why:"포탄·미사일 낙하 시 쇠조각·유리 파편이 가장 큰 부상 원인이다. (교육부 학교현장 재난유형별 교육·훈련매뉴얼)" },
   { id:"S2", loc:"복도", video:"video/s2.mp4",
-    sit:"복도로 나왔다 — <b>'지하대피소' 표지판</b>이 보인다.",
+    sit:"복도로 나왔다 — 학생들이 모두 <b>체육관 쪽</b>으로 이동하고 있다.",
     good:"계단으로, 밀지 않고 뛰지 않으며 이동한다",
     badc:"더 빠른 엘리베이터를 이용하려 한다",
     wrongFx:{ type:"redden", text:"엘리베이터가 열리지 않는다 — <b>소중한 대피 시간을 낭비했다</b>" },
     rule:"공습경보 시 엘리베이터는 이용하지 않는다",
     why:"정전 시 갇힐 위험이 있다. 계단 대피가 원칙이다." },
-  { id:"S3", loc:"대피소 입구", video:"video/s3.mp4",
-    sit:"대피소 입구 — 많은 학생이 <b>한꺼번에 몰린다.</b>",
+  { id:"S3", loc:"체육관 입구", video:"video/s3.mp4",
+    sit:"체육관 입구 — 많은 학생이 <b>한꺼번에 몰린다.</b>",
     good:"순서를 기다리며 질서있게 들어간다",
     badc:"앞사람을 밀치고 먼저 들어가려 한다",
     wrongFx:{ type:"shake", text:"쿵 — <b>밀치다 넘어지며 입구가 뒤엉켰다</b>" },
     rule:"대피 시 밀거나 뛰지 않는다",
     why:"좁은 입구에서 서두르면 압사·전도 사고로 이어진다." },
-  { id:"S4", loc:"대피소 안", video:"video/s4.mp4",
-    sit:"대피소 안 — 다들 자리를 잡고 있다. <b>안내방송</b>이 흘러나온다.",
+  { id:"S4", loc:"체육관", video:"video/s4.mp4",
+    sit:"체육관 — 다들 자리를 잡고 있다. <b>안내방송</b>이 흘러나온다.",
     good:"벽쪽에 자리잡고 안내방송에 집중한다",
     badc:"스마트폰을 보며 딴생각을 한다",
     wrongFx:{ type:"redden", snd:"static", text:"중요한 <b>안내방송을 놓쳤다</b>" },
     rule:"대피 중에는 재난 방송을 청취하며 안내에 따른다",
     why:"다음 행동 지침(경계경보·해제 시점)은 방송으로 전달된다." },
-  { id:"S5", loc:"대피소 안", video:"video/s5.mp4",
+  { id:"S5", loc:"체육관", video:"video/s5.mp4",
     sit:"사이렌 소리가 잦아들며 <b>'경계경보'</b>로 바뀌었다.",
     good:"경보해제 방송이 나올 때까지 대피 장소에서 기다린다",
     badc:"조용해졌으니 미리 나간다",
     wrongFx:{ type:"video", video:"video/wrongB.mp4", text:"아직 위험하다 — <b>경계경보는 해제가 아니다</b>" },
     rule:"경계경보와 경보해제는 다르다 — 해제 방송이 나올 때까지 대피 장소에 머문다",
     why:"경계경보는 '공격이 예상되는' 단계일 뿐, 상황이 끝난 게 아니다." },
-  { id:"S6", loc:"대피소", video:"video/s6.mp4",
+  { id:"S6", loc:"체육관", video:"video/s6.mp4",
     sit:"<b>경보해제 방송</b>이 나온다 — 교실로 복귀할 시간이다.",
     good:"질서있게 줄을 서서 이동하며 인원 파악에 응한다",
     badc:"정리하지 않고 딴짓하다 혼자 뒤처진다",
